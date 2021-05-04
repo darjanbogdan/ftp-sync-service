@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "FtpSyncService": {
+      "commandName": "Project",
+      "commandLineArgs": "%USERPROFILE%\\Downloads DownloadsBackup -f *.srt -h 127.0.0.1 -u user -p 123456",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
