@@ -45,10 +45,10 @@ Ftp:
 ### Example
 
 Parametrized:
-> dotnet FtpSyncService.exe \{local-path\} \{remote-path\} --filter \{filter-expression\} --host \{host-address\} --user \{user\} --password \{password\}
+> FtpSyncService.exe \{local-path\} \{remote-path\} --filter \{filter-expression\} --host \{host-address\} --user \{user\} --password \{password\}
 
 Real:
-> dotnet FtpSyncService.exe %USERPROFILE%\Downloads DownloadsBackup --filter \*.* --host 127.0.0.1 --user user --password 123456
+> FtpSyncService.exe %USERPROFILE%\Downloads DownloadsBackup --filter \*.* --host 127.0.0.1 --user user --password 123456
 
 Note: Filter supports wildcards, e.g. `--filter *.txt` to sync all `.txt` files.
 

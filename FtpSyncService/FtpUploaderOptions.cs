@@ -13,8 +13,8 @@ namespace FtpSyncService.Configuration
         [Option(shortName: 'f', longName: "filter", Required = false, HelpText = "Extension filter pattern", Default = "*.*")]
         public string FilterPattern { get; init; }
 
-        [Option(shortName: 'c', longName: "clean", Required = false, HelpText = "Delete files after upload", Default = true)]
-        public bool Clean { get; init; }
+        [Option(shortName: 'c', longName: "clean", Required = false, HelpText = "Delete files after upload")]
+        public bool? Clean { get; init; }
 
         [Option(shortName: 'd', longName: "delay", Required = false, HelpText = "Sync delay (in ms) after file created event", Default = 1000)]
         public int SyncDelayMiliseconds { get; init; }
